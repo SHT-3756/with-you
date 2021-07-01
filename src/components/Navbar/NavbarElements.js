@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link as LinkRouter } from "react-router-dom";
 import { Link as LinkScroll } from "react-scroll";
 export const Nav = styled.nav`
-  background: #e5e3e1;
+  background: #e64e61;
   height: 80px;
   /* margin-top: -80px; */
   display: flex;
@@ -11,10 +11,13 @@ export const Nav = styled.nav`
   font-size: 1rem;
   position: sticky;
   top: 0;
+  /* position: fixed;
+  width: 100%; */
+  top: 0;
   z-index: 10;
 
-  @media screen and(max-width: 960px) {
-    transition: 0ms.5s all ease-in;
+  @media screen and (max-width: 960px) {
+    transition: 0.8s all ease;
   }
 `;
 export const NavbarContainer = styled.div`

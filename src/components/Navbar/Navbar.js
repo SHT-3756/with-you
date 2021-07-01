@@ -25,7 +25,7 @@ function Navbar({ toggle }) {
               <NavLinks to="gallery">Gallery</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="inforamtion">Inforamtion</NavLinks>
+              <NavLinks to="information">Information</NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks to="location">Location</NavLinks>
