@@ -50,13 +50,13 @@ function Navbar({ toggle }) {
             </NavItem>
             <NavItem>
               <NavLinks
-                to="gallery"
+                to="service"
                 smooth={true}
                 duration={500}
                 spy={true}
                 offset={-80}
               >
-                Gallery
+                Services
               </NavLinks>
             </NavItem>
 

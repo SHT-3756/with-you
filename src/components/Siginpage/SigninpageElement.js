@@ -11,8 +11,8 @@ export const Container = styled.div`
   overflow: hidden;
   background: linear-gradient(
     108deg,
-    rgba(1, 147, 86, 1) 0%,
-    rgba(10, 201, 122, 1) 100%
+    rgba(247, 120, 107, 1) 0%,
+    rgba(247, 202, 201, 1) 100%
   );
 `;
 export const FormWrap = styled.div`
@@ -41,7 +41,7 @@ export const Icon = styled(Link)`
 `;
 
 export const Form = styled.form`
-  background: #010101;
+  background: #f3dabb;
   max-width: 400px;
   height: auto;
   width: 100%;
@@ -85,7 +85,7 @@ export const FormInput = styled.input`
   border-radius: 4px;
 `;
 export const FormButton = styled.button`
-  background: #01bf71;
+  background: #f7786b;
   padding: 16px 0;
   border: none;
   border-radius: 4px;
@@ -94,7 +94,7 @@ export const FormButton = styled.button`
   cursor: pointer;
 
   &:hover {
-    background: blue;
+    background: white;
     transition: all 0.2s ease-in-out;
     color: red;
   }
