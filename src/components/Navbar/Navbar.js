@@ -11,12 +11,17 @@ import {
   NavBtn,
   NavBtnLink,
 } from "./NavbarElements";
+import { UseScroll } from "../../Hooks/UseScroll";
+
 function Navbar({ toggle }) {
+  const { scrollNav, toggleHome } = UseScroll();
   return (
-    <div>
-      <Nav>
+    <>
+      <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <NavLogo to="/">with you</NavLogo>
+          <NavLogo to="/" onClick={toggleHome}>
+            with you
+          </NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
@@ -39,7 +44,7 @@ function Navbar({ toggle }) {
           </NavBtn>
         </NavbarContainer>
       </Nav>
-    </div>
+    </>
   );
 }
 
