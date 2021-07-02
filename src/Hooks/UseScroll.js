@@ -19,9 +19,11 @@ export function UseScroll() {
       window.removeEventListener("scroll", changeNav);
     };
   }, []);
+
   const toggleHome = () => {
     scroll.scrollToTop();
   };
+
   return {
     UseScroll,
     scrollNav,

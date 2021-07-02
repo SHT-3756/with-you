@@ -27,16 +27,49 @@ function Navbar({ toggle }) {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="gallery">Gallery</NavLinks>
+              <NavLinks
+                to="information"
+                smooth={true}
+                duration={500}
+                spy={true}
+                offset={-80}
+              >
+                Information
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="information">Information</NavLinks>
+              <NavLinks
+                to="location"
+                smooth={true}
+                duration={500}
+                spy={true}
+                offset={-80}
+              >
+                Location
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="location">Location</NavLinks>
+              <NavLinks
+                to="gallery"
+                smooth={true}
+                duration={500}
+                spy={true}
+                offset={-80}
+              >
+                Gallery
+              </NavLinks>
             </NavItem>
+
             <NavItem>
-              <NavLinks to="about">About</NavLinks>
+              <NavLinks
+                to="about"
+                smooth={true}
+                duration={500}
+                spy={true}
+                offset={-80}
+              >
+                About
+              </NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>

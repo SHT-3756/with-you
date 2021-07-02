@@ -21,7 +21,9 @@ import {
   SocialIcons,
   SocialIconLink,
 } from "./FooterElement";
+import { UseScroll } from "../../Hooks/UseScroll";
 const Footer = () => {
+  const { toggleHome } = UseScroll();
   return (
     <FooterContainer>
       <FooterWrap>
@@ -67,7 +69,9 @@ const Footer = () => {
         </FooterLinksContainer>
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to="/">with-you</SocialLogo>
+            <SocialLogo to="/" onClick={toggleHome}>
+              with-you
+            </SocialLogo>
             <WebsiteRights>with-you {new Date().getFullYear()}</WebsiteRights>
             <SocialIcons>
               <SocialIconLink href="/" target="_blank" aria-label="Facebook">
